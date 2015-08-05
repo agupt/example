@@ -1,5 +1,5 @@
 // file to simple square root calculation, start with half of number while calculating square root using newton's formula
-package main
+package utils
 
 import "fmt"
 
@@ -21,7 +21,7 @@ func chooseStart(x int) float64 {
 	return float64(x) / 2
 }
 
-func sqrt(x int) float64 {
+func Sqrt(x int) float64 {
 	var cur float64 = sqrtWithTries(x, chooseStart(x), 5) // do 5 minimum tries
 	var next float64 = nextSqrt(cur, x)
 	for {
@@ -35,6 +35,7 @@ func sqrt(x int) float64 {
 
 }
 
+/*
 func main() {
 	var val int
 	args, err := fmt.Scanln(&val)
@@ -46,4 +47,4 @@ func main() {
 	fmt.Printf("Calculating Square Root of %v\n", val)
 	fmt.Printf("sqrt of %v = %v\n", val, sqrt(val))
 	
-}
+}*/

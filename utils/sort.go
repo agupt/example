@@ -1,8 +1,8 @@
-package main 
+package utils
 
 import "fmt"
 
-func insertionSort(input []int) int {
+func InsertionSort(input []int) int {
 	fmt.Printf("sorting %v of length %v\n", input, len(input))
 	var loop int = 0
 	for i := 0 ; i < len(input); i++ {
@@ -18,8 +18,9 @@ func insertionSort(input []int) int {
 	return loop
 }
 
+/*
 func main() {
 	input := []int{5,4,3,2,1}
 	loop := insertionSort(input)
 	fmt.Printf("looped %v times %v\n", loop, input)
-}
+}*/
